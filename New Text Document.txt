@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int chem,math,phy;
+    
+    float Total;
+    
+    
+    printf("Enter the chim markes: %d \n",chem);
+    scanf("%d",&chem);
+    
+    printf("Enter the chim markes: %d \n",math);
+    scanf("%d",&math);
+
+    printf("Enter the chim markes: %d \n",phy);
+    scanf("%d",&phy);
+    
+    Total=(chem+math+phy)/3;
+    printf("The total persentage is : %f\n",Total);
+    
+    if((Total<=40)|| chem<=33||math<=33 || phy<=33)
+    {
+        printf("Your fail\n");
+    }
+    else{
+        printf("Your Pass\n");
+    }
+    return 0;
+}
+    
